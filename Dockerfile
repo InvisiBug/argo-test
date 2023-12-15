@@ -1,4 +1,4 @@
-FROM arm64v8/node:14
+FROM arm64v8/node:latest
 WORKDIR /src
 COPY . .
 RUN yarn install
