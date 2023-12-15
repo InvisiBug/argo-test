@@ -4,6 +4,7 @@ const port = 3000;
 
 app.listen(port);
 console.log(`App running at http://localhost:${port}`);
+console.log()
 
 app.get('/health', (req, res) => {
   res.send('OK');
@@ -13,5 +14,5 @@ app.get('/health', (req, res) => {
 app.get('/', (req, res) => {
   const name = process.env.NAME || 'World';
   console.log("Booper")
-  res.send(`Hello ${name}!`);
+  res.send(`Current version is: ${name}!`);
 });
