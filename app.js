@@ -7,7 +7,7 @@ console.log(`App running at http://localhost:${port}`);
 console.log()
 const name = process.env.NAME || 'World';
 console.log("Booper")
-res.send(`Current version is: ${name}!`);
+console.log(`Current version is: ${name}!`);
 
 app.get('/health', (req, res) => {
   res.send('OK');
