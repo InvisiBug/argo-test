@@ -9,6 +9,7 @@ env:
   DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
   DOCKERHUB_KEY: ${{ secrets.DOCKER_KEY }}
   IMAGE_NAME: argo-test
+  DOCKER_TARGET_PLATFORM: linux/arm/v7
 
 jobs:
   build-and-deploy:
