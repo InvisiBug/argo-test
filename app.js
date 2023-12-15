@@ -12,6 +12,6 @@ app.get('/health', (req, res) => {
 
 app.get('/', (req, res) => {
   const name = process.env.NAME || 'World';
-  console.log("That didnt work")
+  console.log("Maybe this time")
   res.send(`Hello ${name}!`);
 });
